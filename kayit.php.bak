@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>ÜMRANİYE SPOR KULÜBÜ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    </style>
+  </head>
+<body>
+
+<?php
+$nameErr = $emailErr = $genderErr = $usernameErr = $passwordErr = "";
+$name = $email = $gender = $username = $password = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "İsim zorunlu";
+  } else {
+    $name = test_input($_POST["name"]);
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "E-posta zorunlu";
+  } else {
+    $email = test_input($_POST["email"]);
+  }
+    
+  if (empty($_POST["username"])) {
+    $usernameErr = "Kullanıcı adı zorunlu";
+  } else {
+    $username = test_input($_POST["username"]);
+  }
+
+  if (empty($_POST["password"])) {
+    $passwordErr = "Şifre zorunlu";
+  } else {
+    $password = test_input($_POST["password"]);
+  }
+
+  if (empty($_POST["gender"])) {
+    $genderErr = "Cinsiyet zorunlu";
+  } else {
+    $gender = test_input($_POST["gender"]);
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<h1>ÜMRANİYE SPOR KULÜBÜ</h1>
+<h3>KAYIT OL</h3>
+<p><span class="error">* Zorunlu Alanlar</span></p>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  İsim: <input type="text" name="name">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  E-posta: <input type="text" name="email">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  Cinsiyet:
+  <input type="radio" name="gender" value="male">Erkek
+  <input type="radio" name="gender" value="female">Kadın
+  <span class="error">* <?php echo $genderErr;?></span>
+  <br><br>
+  Kullanıcı Adı: <input type="text" name="email">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  Şifre: <input type="text" name="email">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  <input type="submit" name="submit" value="Gönder">  
+</form>
+
+</body>
+</html>

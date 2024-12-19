@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>Ümraniye Spor Kulübü</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Ümraniye<br>Spor Kulübü</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tarihçesi</a> 
+    <a href="#basarilari" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Başarıları</a> 
+    <a href="#oyuncular" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Oyuncular</a>	
+    <a href="#formalari" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formaları</a>
+	<a href="#satinal" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Satın Al</a>
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Ümraniye Spor Kulübü</span>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>ÜMRANİYE SPOR KULÜBÜ</b></h1>
+	<img src="Ümraniyespor.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ümraniyespor_Logosu" width="500" height="500">
+    <br><br>
+	<h1 class="w3-xxxlarge w3-text-red"><b>Tarihçesi</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+	<p>Ümraniyespor, 1938 yılında kurulmuş; 1990'lı yıllarda 7 sezon Üçüncü Lig'de mücadele ettikten sonra 2000 yılında amatör kümeye düşmüştür. 2009-2010 sezonunda Süper Amatör Lig'de, 2010-2011 sezonunda ise Bölgesel Amatör Lig'de grubunda lider tamamlamış ve Spor Toto 3. Lig'e yükselmiştir.
+
+2012-2013 sezonunda katıldığı Türkiye Kupasında Anadolu Üsküdar takımını 2-0 yenip Kayseri Erciyesspor'un rakibi olmuştur. Kayseri Erciyesspor ile oynanan maçta normal süresi 1-1 tamamlanan karşılaşmanın uzatma dakikalarında kalesinde gördüğü golle Kayseri Erciyesspor’a 2-1 yenilmiştir. 2012-13 3. Lig sezonunu 5.Sırada bitiren Ümraniyespor Play-off Finalinde Çanakkale Dardanel'e 5-0 mağlup olmuştur.
+
+Ümraniyespor 2013-14 3. Lig sezonunun otuzuncu haftasında oynadığı Yeşil Bursa maçını kendi evinde 2-1 kazanarak ligin bitimine 4 hafta kala Ergun Ortakçı yönetiminde şampiyonluğunu ilan etmiş ve bir sonraki yıl tarihinde ilk kez 2. Lig'de oynamaya hak kazanmıştır.
+
+2. Lig'de ilk sezonunda Play Off mücadelesine katılmaya hak kazanan Ümraniyespor, 1461 Trabzon'a elenmiştir.
+
+Sonraki sezonda ise ligin 32. haftasında deplasmanda İstanbulspor'u 3-0 mağlup ederek ligin bitimine 2 hafta kala şampiyonluğu garantilemiş ve tarihinde ilk kez 1. Lig'e yükselmiştir.
+    </p>
+  </div>
+
+  <div class="w3-container" id="basarilari" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Başarıları</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>1. Lig<br>
+Şampiyonluk (1) : 2021-2022<br>
+
+Türkiye Kupası<br>
+Yarı final (1) : 2018-2019<br>
+
+1. Lig<br>
+Play Off Yarı final (1) : 2017-2018<br>
+
+2. Lig<br>
+Şampiyonluk (1) : 2015-2016<br>
+
+3. Lig<br>
+Şampiyonluk (1) : 2013-2014<br>
+
+Bölgesel Amatör Lig<br>
+Şampiyonluk (1) : 2010-2011<br>
+    </p>
+  </div>
+  
+  <div class="w3-container" id="oyuncular" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Oyuncular</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p><b>Numara   |   Ülke   |   Mevki   |   Oyuncu </b><br>
+2   |   Bosna-Hersek	  |   DF   |   Avdija Vršajević<br>
+4   |   Türkiye   |	  DF   |   Mustafa Eser<br>
+5	|   Türkiye   |   DF   |   Alim Öztürk<br>
+6	|   Türkiye	  |   OS   |   Yunus Mertoğlu<br>
+7	|   Senegal	  |   FV   |   Idrissa Camara<br>
+8	|   Türkiye	  |   OS   |   Serkan Göksu<br>
+9	|   Nijerya	  |   FV   |   Lanre Kehinde<br>
+10	|   Fas		  |   FV   |   Yacine Bammou<br>
+11	|   Türkiye	  |   OS   |   Onur Ayik<br>
+13	|   Türkiye	  |   KL   |   Orkun Özdemir<br>
+15	|   Türkiye	  |   OS   |   Mustafa Can Karagöz<br>
+17	|   Türkiye	  |   DF   |   Emre Nefiz<br>
+20	|   Türkiye	  |   OS   |   Oğuz Gürbulak<br>
+28	|   Venezuela |   FV   |   Yonathan Del Valle<br>
+33	|   Türkiye	  |   DF   |   Yiğithan Güveli<br>
+35	|   Türkiye	  |   KL   |   Burak Öğür<br>
+39	|   Hırvatistan   |   OS   |   Antonio Mrsic<br>
+40	|   Türkiye	  |   OS   |   Yusuf Emre Gültekin<br>
+41	|   Türkiye	  |   OS   |   Kartal Kayra Yılmaz<br>
+44	|   Hırvatistan   | DF   |   Tomislav Glumac<br>
+55	|   Türkiye	  |   DF   |   Ercan Coşkun<br>
+77	|   Türkiye	  |   OS   |   Denizhan Taşkan<br>
+88	|   Türkiye	  |   OS   |   Tahsin Hacımustafaoğlu<br>
+99	|   Türkiye	  |   FV   |   Fuat Bavuk<br>
+21	|   İtalya	  |   FV   |   Stefano Napoleoni
+</p>
+  </div>
+  
+  <div class="w3-container" id="formalari" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Formaları</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="000232_I_2_1500.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ümraniyespor_Logosu" width="500" height="1500">
+      <img src="000232_D_1_1500.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ümraniyespor_Logosu" width="500" height="1500">
+      <img src="000232_K_1_1500.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ümraniyespor_Logosu" width="500" height="1500">
+	  <img src="000232_K_3_1500.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ümraniyespor_Logosu" width="500" height="1500">
+    </div>
+
+    <div class="w3-half">
+      <img src="000232_I_1_1500.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ümraniyespor_Logosu" width="500" height="1500">
+      <img src="000232_Y_1_1500.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ümraniyespor_Logosu" width="500" height="1500">
+      <img src="000232_K_2_1500.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ümraniyespor_Logosu" width="500" height="1500">
+	  <img src="000232_K_4_1500.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ümraniyespor_Logosu" width="500" height="1500">
+    </div>
+  </div>
+  
+  <div class="w3-container" id="satinal" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Satın Al</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p><b>Ümraniyespor Ürünleri</b></p>
+    <a href=”https://www.sportive.com.tr/umraniyespor-formasi-ve-urunleri/”> Ümraniyespor Ürünlerini Satın Almak İçin Tıklayın </a><br>
+	<p><b>Ümraniyespor Biletleri</b></p><br>
+	<a href=”https://www.passo.com.tr/tr/kategori/futbol-mac-biletleri/4615”> Ümraniyespor Maç Biletini Satın Almak İçin Tıklayın </a>
+  </div>
+</div>
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"></p></div>
+
+</body>
+</html>
