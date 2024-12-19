@@ -1,2 +1,2 @@
 # Spor_Kulubu_Sitesi
-Ümraniyespor İçin HTML, CSS ve PHP Kullanılarak Oluşturulmuş Proje
+Ümraniyespor Kulübü Web Sitesi İçin HTML, CSS ve PHP Kullanılarak Oluşturulmuş Bir Proje
